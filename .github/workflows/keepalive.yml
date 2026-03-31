@@ -2,7 +2,7 @@ name: Keep Render Online
 
 on:
   schedule:
-    - cron: '*/12 * * * *'
+    - cron: '*/20 * * * *'
   workflow_dispatch:
 
 jobs:
@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Visit website
-        run: curl -s https://documind-ai-pvqg.onrender.com > /dev/null
+        run: curl -s https://coderax.onrender.com/ping > /dev/null
